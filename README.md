@@ -1,2 +1,2 @@
-# datafaith-website
-This is the repo for the datafaith main website
+# DataFaith main website repository
+This is the repo for the DataFaith main website
