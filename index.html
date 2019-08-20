@@ -1,677 +1,621 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>SB Admin 2 - Dashboard</title>
-
-  <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-  <!-- Custom styles for this template-->
-  <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Favison SAAS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
+<body>
 
-<body id="page-top">
-
-  <!-- Page Wrapper -->
-  <div id="wrapper">
-
-    <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-      </a>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Interface
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Components</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Utilities</span>
-        </a>
-        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Addons
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li>
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li>
-
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider d-none d-md-block">
-
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
-
-    </ul>
-    <!-- End of Sidebar -->
-
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-      <!-- Main Content -->
-      <div id="content">
-
-        <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-          <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-
-          <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-
-          <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
-
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-            <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
+    <!--================Header Menu Area =================-->
+    <header class="header_area">	
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="price.html">Price</a></li>     
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li> 
+                                    <li class="nav-item"><a class="nav-link" href="price.html">Price</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="element.html">Element</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+                                </ul>
+                            </li> 
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
-                  </div>
-                </form>
-              </div>
-            </li>
-
-            <!-- Nav Item - Alerts -->
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter">3+</span>
-              </a>
-              <!-- Dropdown - Alerts -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
-                  Alerts Center
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-primary">
-                      <i class="fas fa-file-alt text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                      <i class="fas fa-donate text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    $290.29 has been deposited into your account!
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-warning">
-                      <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-              </div>
-            </li>
-
-            <!-- Nav Item - Messages -->
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-envelope fa-fw"></i>
-                <!-- Counter - Messages -->
-                <span class="badge badge-danger badge-counter">7</span>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
-                <h6 class="dropdown-header">
-                  Message Center
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
-                    <div class="status-indicator bg-success"></div>
-                  </div>
-                  <div class="font-weight-bold">
-                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
-                    <div class="small text-gray-500">Emily Fowler · 58m</div>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
-                    <div class="status-indicator"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
-                    <div class="small text-gray-500">Jae Chun · 1d</div>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
-                    <div class="status-indicator bg-warning"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
-                    <div class="status-indicator bg-success"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-              </div>
-            </li>
-
-            <div class="topbar-divider d-none d-sm-block"></div>
-
-            <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
-              </a>
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Activity Log
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
-            </li>
-
-          </ul>
-
-        </nav>
-        <!-- End of Topbar -->
-
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-          </div>
-
-          <!-- Content Row -->
-          <div class="row">
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
+                    <div class="right-button">
+                        <ul>
+                            <li class="shop-icon"><a href="#"><i class="ti-shopping-cart-full"></i><span>0</span></a></li>
+                            <li><a class="sign_up" href="">Sign Up</a></li>
+                        </ul>
+                    </div> 
                 </div>
-              </div>
-            </div>
+            </nav>
+        </div>
+    </header>
+    <!--================Header Menu Area =================-->
 
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+    <!--================Home Banner Area =================-->
+    <section class="home_banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
+                        <div class="banner_content">
+                            <h3>Build a better<br/>business & faster</h3>
+                            <p>Subdue creature does face signs evening good sixth foreign gaered one. Fruit. Third every fruitful multiply subdue creature doesn't face signs evening good sixth tyou're.</p>
+                            <a class="banner_btn" href="#">Begin Free Trial<i class="ti-arrow-right"></i></a>
                         </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Service  Area =================-->
+    <section class="service-area area-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Single service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="ti-pencil-alt"></i>
                         </div>
-                      </div>
+                        <div class="service-content">
+                            <h5>Unique Design</h5>
+                            <p>Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
+                            <a href="#">Read More</a>
+                        </div>
                     </div>
-                    <div class="col-auto">
-                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
 
-            <!-- Pending Requests Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pending Requests</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                <!-- Single service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="ti-image"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Business Solution</h5>
+                            <p>Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
+                            <a href="#">Read More</a>
+                        </div>
                     </div>
-                    <div class="col-auto">
-                      <i class="fas fa-comments fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- Content Row -->
 
-          <div class="row">
-
-            <!-- Area Chart -->
-            <div class="col-xl-8 col-lg-7">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                <!-- Single service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="ti-headphone-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Customer Support</h5>
+                            <p>Third don't lights wherein was. bring to build them, seas. Thing gathering answ gaered beast third that heaven after all that living one bank limit</p>
+                            <a href="#">Read More</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pie Chart -->
-            <div class="col-xl-4 col-lg-5">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-pie pt-4 pb-2">
-                    <canvas id="myPieChart"></canvas>
-                  </div>
-                  <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Direct
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Social
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Referral
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Content Row -->
-          <div class="row">
-
-            <!-- Content Column -->
-            <div class="col-lg-6 mb-4">
-
-              <!-- Project Card Example -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
-                </div>
-                <div class="card-body">
-                  <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Account Setup <span class="float-right">Complete!</span></h4>
-                  <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Color System -->
-              <div class="row">
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-primary text-white shadow">
-                    <div class="card-body">
-                      Primary
-                      <div class="text-white-50 small">#4e73df</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-success text-white shadow">
-                    <div class="card-body">
-                      Success
-                      <div class="text-white-50 small">#1cc88a</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-info text-white shadow">
-                    <div class="card-body">
-                      Info
-                      <div class="text-white-50 small">#36b9cc</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-warning text-white shadow">
-                    <div class="card-body">
-                      Warning
-                      <div class="text-white-50 small">#f6c23e</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-danger text-white shadow">
-                    <div class="card-body">
-                      Danger
-                      <div class="text-white-50 small">#e74a3b</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-secondary text-white shadow">
-                    <div class="card-body">
-                      Secondary
-                      <div class="text-white-50 small">#858796</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
             </div>
-
-            <div class="col-lg-6 mb-4">
-
-              <!-- Illustrations -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
-                </div>
-                <div class="card-body">
-                  <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/undraw_posting_photo.svg" alt="">
-                  </div>
-                  <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
-                  <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw &rarr;</a>
-                </div>
-              </div>
-
-              <!-- Approach -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
-                </div>
-                <div class="card-body">
-                  <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.</p>
-                  <p class="mb-0">Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
         </div>
-        <!-- /.container-fluid -->
+    </section>
+    <!--================Service Area end =================-->
 
-      </div>
-      <!-- End of Main Content -->
 
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
-          </div>
+    <!--================About  Area =================-->
+    <section class="about-area area-padding-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <div class="area-heading">
+                        <h4>Form Female From<br>Cattle Evening. </h4>
+                        <h6>And appear great open bearing evening dominion vodi </h6>
+
+                        <p>There earth face earth behold. She'd stars made void two given do and also. Our own grass days.  Greater male Shall There faced earth behold She star</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="single-about">
+                                <div class="about-icon">
+                                    <i class="ti-thought"></i>
+                                </div>
+                                <div class="single-about-content">
+                                    <h5>Cloud Compatibility</h5>
+                                    <p>There earth face earth behold. She stars made void two given and also our own grass days. Greater </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="single-about">
+                                <div class="about-icon">
+                                    <i class="ti-truck"></i>
+                                </div>
+                                <div class="single-about-content">
+                                    <h5>On Time Delivery</h5>
+                                    <p>There earth face earth behold. She stars made void two given and also our own grass days. Greater </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </footer>
-      <!-- End of Footer -->
+    </section>
+    <!--================About Area End =================-->
 
+    <!--================Feature  Area =================-->
+    <section class="feature-area area-padding bg_one">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="offset-lg-6 col-lg-6">
+                    <div class="area-heading light">
+                        <h4>Easy to Use <br>Mobile Application</h4>
+                        <p>There earth face earth behold. She'd stars made void two given do and also. Our own grass days.  Greater male Shall There faced earth behold She star</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-">
+                            <div class="single-feature d-flex">
+                                <div class="feature-icon">
+                                    <i class="ti-layers"></i>
+                                </div>
+                                <div class="single-feature-content">
+                                    <h5>Add New Project</h5>
+                                    <p>There earth face earth behold. She stars made void two given and also our own grass days. Greater </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-">
+                            <div class="single-feature d-flex">
+                                <div class="feature-icon">
+                                    <i class="ti-layers"></i>
+                                </div>
+                                <div class="single-feature-content">
+                                    <h5>Generating Leads</h5>
+                                    <p>There earth face earth behold. She stars made void two given and also our own grass days. Greater </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Feature Area End =================-->
+
+
+    <!--================About  Area =================-->
+    <section class="statics-area area-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-5">
+                    <div class="image-box">
+                        <img src="img/banner/about3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="offset-lg-1 col-lg-6">
+                    <div class="area-heading">
+                        <h4>Form Female From<br>Cattle Evening. </h4>
+                        <h6>And appear great open bearing evening dominion vodi </h6>
+
+                        <p>There earth face earth behold. She'd stars made void two given do and also. Our own grass days.  Greater male Shall There faced earth behold She star</p>
+                    </div>
+                    <div class="single-data">
+                        <i class="ti-paint-bucket"></i>
+                        <p>Set dry signs spirit a kind First shall them.</p>
+                    </div>
+                    <div class="single-data">
+                        <i class="ti-check-box"></i>
+                        <p>He two face one moved dominion man you're likeness</p>
+                    </div>
+                    <div class="single-data">
+                        <i class="ti-ruler-pencil"></i>
+                        <p>Sea forth fill have divide be dominion from life</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================About Area End =================-->
+
+
+
+
+
+    <!--================ Start Portfolio Area =================-->
+    <section class="pricing_area area-padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="area-heading">
+                        <h4>Our Pricing Plan</h4>
+                        <p>Life firmament under them evening make after called dont saying likeness<br> isn't wherein also forth she'd air two without</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single-pricing">
+                        <div class="pricing-icon">
+                            <i class="ti-home"></i>
+                        </div>
+                        <div class="single-pricing-content">
+                            <h5>Standard</h5>
+                            <h4>$25<span class="currency_line">/</span><span>month</span></h4>
+                            <ul>
+                                <li>2GB Bandwidth</li>
+                                <li>Two Account</li>
+                                <li>15GB Storage</li>
+                                <li>Sale After Service</li>
+                                <li>3 Host Domain</li>
+                                <li>24/7 Support</li>
+                            </ul>
+                            <a href="#">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single-pricing">
+                        <div class="pricing-icon">
+                            <i class="ti-bag"></i>
+                        </div>
+                        <div class="single-pricing-content">
+                            <h5>Business</h5>
+                            <h4>$35<span class="currency_line">/</span><span>month</span></h4>
+                            <ul>
+                                <li>2GB Bandwidth</li>
+                                <li>Two Account</li>
+                                <li>15GB Storage</li>
+                                <li>Sale After Service</li>
+                                <li>3 Host Domain</li>
+                                <li>24/7 Support</li>
+                            </ul>
+                            <a href="#">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single-pricing">
+                        <div class="pricing-icon">
+                            <i class="ti-car"></i>
+                        </div>
+                        <div class="single-pricing-content">
+                            <h5>Premium</h5>
+                            <h4>$45<span class="currency_line">/</span><span>month</span></h4>
+                            <ul>
+                                <li>2GB Bandwidth</li>
+                                <li>Two Account</li>
+                                <li>15GB Storage</li>
+                                <li>Sale After Service</li>
+                                <li>3 Host Domain</li>
+                                <li>24/7 Support</li>
+                            </ul>
+                            <a href="#">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single-pricing">
+                        <div class="pricing-icon">
+                            <i class="ti-gift"></i>
+                        </div>
+                        <div class="single-pricing-content">
+                            <h5>Ultimate</h5>
+                            <h4>$55<span class="currency_line">/</span><span>month</span></h4>
+                            <ul>
+                                <li>2GB Bandwidth</li>
+                                <li>Two Account</li>
+                                <li>15GB Storage</li>
+                                <li>Sale After Service</li>
+                                <li>3 Host Domain</li>
+                                <li>24/7 Support</li>
+                            </ul>
+                            <a href="#">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Pricing Area =================-->
+
+
+
+    <!--================ Start Blog Area =================-->
+    <section class="latest-blog-area area-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="area-heading">
+                        <h4>Read Our Latest News</h4>
+                        <p>Life firmament under them evening make after called dont saying likeness<br> isn't wherein also forth she'd air two without</p>
+                    </div>           
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 col-md-6 ">
+                    <div class="single-blog full_image">
+                        <div class="thumb">
+                            <img class="img-fluid w-100" src="img/blog/1.png" alt="">
+                        </div>
+                        <div class="single-blog-content">
+                            <p class="tag">Software / Business</p>
+                            <p class="date">March 10, 2019</p>
+                            <h4>
+                                <a href="#">Appear called is blessed good void had given from <br>
+                                which Lights Saying image.</a>
+                            </h4>
+                            <div class="meta-bottom d-flex">
+                                <p class="likes"><i class="ti-comments"></i> 02 Comments</p>
+                                <p><i class="ti-heart"></i> 15 </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid w-100" src="img/blog/2.png" alt="">
+                        </div>
+                        <div class="single-blog-content">
+                            <p class="tag">Software / Business</p>
+                            <p class="date">March 10, 2019</p>
+                            <h4>
+                                <a href="#">You living thing whose After
+                                our third you also Us.</a>
+                            </h4>
+                            <div class="meta-bottom d-flex">
+                                <p class="likes"><i class="ti-comments"></i> 02 Comments</p>
+                                <p><i class="ti-heart"></i> 15 </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="img-fluid w-100" src="img/blog/1.png" alt="">
+                        </div>
+                        <div class="single-blog-content">
+                            <p class="tag">Software / Business</p>
+                            <p class="date">March 10, 2019</p>
+                            <h4>
+                                <a href="#">You living thing whose After
+                                our third you also Us.</a>
+                            </h4>
+                            <div class="meta-bottom d-flex">
+                                <p class="likes"><i class="ti-comments"></i> 02 Comments</p>
+                                <p><i class="ti-heart"></i> 15 </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-8 col-md-6">
+                    <div class="single-blog full_image">
+                        <div class="thumb">
+                            <img class="img-fluid w-100" src="img/blog/4.png" alt="">
+                        </div>
+                        <div class="single-blog-content">
+                            <p class="tag">Software / Business</p>
+                            <p class="date">March 10, 2019</p>
+                            <h4>
+                                <a href="#">You living thing whose After
+                                our third you also Us.</a>
+                            </h4>
+                            <div class="meta-bottom d-flex">
+                                <p class="likes"><i class="ti-comments"></i> 02 Comments</p>
+                                <p><i class="ti-heart"></i>15</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--================ End Blog Area =================-->
+
+
+    <!--================ Start Brands Area =================-->
+    <section class="brands-area area-padding-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="owl-carousel brand-carousel">
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/1.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/2.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/3.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/4.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/5.png" alt="">
+                            </div>
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item d-table">
+                            <div class="d-table-cell">
+                                <img src="img/logo/3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Brands Area =================-->
+
+
+
+    <!-- ================ start footer Area ================= -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>About Us</h4>
+                    <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days open</p>
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>Contact Info</h4>
+                    <div class="footer-address">
+                        <p>Address :Your address goes
+                        here, your demo address.</p>
+                        <span>Phone : +8880 44338899</span>
+                        <span>Email : info@colorlib.com</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>Important Link</h4>
+                    <ul>
+                        <li><a href="#">WHMCS-bridge</a></li>
+                        <li><a href="#">Search Domain</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li><a href="#">Our Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-8 mb-4 mb-xl-0 single-footer-widget">
+                    <h4>Newsletter</h4>
+                    <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days open</p>
+
+                    <div class="form-wrap" id="mc_embed_signup">
+                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                        method="get">
+                        <div class="input-group">
+                            <input type="email" class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '">
+                            <div class="input-group-append">
+                                <button class="btn click-btn" type="submit">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: -5000px;">
+                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                        </div>
+
+                        <div class="info"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom row align-items-center text-center text-lg-left no-gutters">
+            <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                <a href="#"><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-twitter-alt"></i></a>
+                <a href="#"><i class="ti-dribbble"></i></a>
+                <a href="#"><i class="ti-linkedin"></i></a>
+            </div>
+        </div>
     </div>
-    <!-- End of Content Wrapper -->
+</footer>
+<!-- ================ End footer Area ================= -->
 
-  </div>
-  <!-- End of Page Wrapper -->
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
 
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
-
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/theme.js"></script>
 </body>
-
 </html>
